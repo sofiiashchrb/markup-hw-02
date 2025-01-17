@@ -1,0 +1,114 @@
+:root {
+    --text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
+    --card-background-color: #FFFFFF;
+    --button-background-color: #F5F4FA;
+
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #212121;
+}
+
+/* header */
+
+.left_logo {
+    color: #2196F3;
+}
+
+.right_logo {
+    color: #000000;
+}
+
+.list {
+    list-style: none;
+}
+
+/* site-nav */
+
+.site-nav a {
+    color: var(--title-text-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.contact-nav a {
+    color: var(--text-color)
+}
+
+.contact-nav a:hover,
+.contact-nav a:focus {
+    color: var(--accent-color)
+}
+
+
+/* section buttons */
+
+.section .button {
+    background-color: var(--button-background-color);
+    color: var(--title-text-color);
+}
+
+.section .button.current {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+
+.section .button:hover,
+.section .button:focus {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+
+}
+
+/* projects */
+.projects .card {
+    background-color: var(--card-background-color);
+
+}
+
+.projects .card .title {
+    color: var(--title-text-color);
+
+}
+
+.projects .card .text {
+    color: var(--text-color);
+}
+
+/* footer */
+.footer {
+    background-color: #2F303A;
+}
+
+.footer .right_logo {
+    color: #FFFFFF;
+}
+
+.footer .address {
+    color: #FFFFFF;
+}
+
+.footer .address:hover,
+.footer .address:focus {
+    color: var(--accent-color);
+}
+
+.footer .contact-nav {
+    color: var(--footer-contacts-text-color);
+}
+
+.footer .contact-nav:hover,
+.footer .contact-nav:focus {
+    color: var(--accent-color);
+}

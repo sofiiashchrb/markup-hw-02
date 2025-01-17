@@ -1,0 +1,218 @@
+:root {
+    --primary-title-text-color: #FFFFFF;
+    --text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
+
+}
+
+/* для Raleway – 700, а для Roboto – 400, 500, 700 і 900 */
+/* font-size
+line-height
+font-weight
+Кнопкам задана властивість cursor зі значенням pointer */
+
+
+
+
+body {
+    background-color: #F5F5F5;
+    color: #212121;
+    font-family: "Roboto", "Arial", sans-serif;
+
+}
+
+/* header */
+
+.left_logo {
+    color: #2196F3;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26;
+    line-height: 1.2;
+    letter-spacing: 2.6;
+
+}
+
+.right_logo {
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26;
+    line-height: 1.2;
+    letter-spacing: 2.6;
+}
+
+.left_logo,
+.right_logo {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/* site-nav */
+
+
+.site-nav a {
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.28px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.contact-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.contact-nav a:hover,
+.contact-nav a:focus {
+    color: var(--accent-color)
+}
+
+/* main */
+
+/* primary section */
+.primary-section {
+    background-color: #2F303A;
+}
+
+.primary-section .title {
+    color: var(--primary-title-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    text-align: center;
+}
+
+.primary-section .button:hover,
+.primary-section .button:focus {
+    color: #2F303A;
+}
+
+.primary-section .button {
+    background-color: #2196F3;
+    color: var(--primary-title-text-color);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    cursor: pointer;
+
+
+}
+
+/* section */
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.42px;
+}
+
+.section-text {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.42;
+}
+
+/* about us */
+.section-title-about {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 1.08px;
+    text-align: center;
+}
+
+/* our team */
+
+.section-team {
+    background-color: #F5F4FA;
+}
+
+.section-team .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 1.08px;
+    text-align: center;
+}
+
+.team-card {
+    background-color: #FFFFFF;
+}
+
+.team-card .title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+}
+
+.team-card .text {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+
+}
+
+/* footer */
+.footer {
+    background-color: #2F303A;
+}
+
+.footer .right_logo {
+    color: #FFFFFF;
+}
+
+.footer .address,
+.footer .contact-nav {
+    color: var(--primary-title-text-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.52px;
+    font-style: normal;
+}
+
+.footer .address:hover,
+.footer .address:focus {
+    color: var(--accent-color);
+}
+
+.footer .contact-nav {
+    color: var(--footer-contacts-text-color);
+    text-decoration: none;
+}
+
+.footer .contact-nav:hover,
+.footer .contact-nav:focus {
+    color: var(--accent-color);
+}
