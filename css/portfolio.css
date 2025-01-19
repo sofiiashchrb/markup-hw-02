@@ -11,6 +11,7 @@
 body {
     background-color: #FFFFFF;
     color: #212121;
+    font-family: "Roboto";
 }
 
 /* header */
@@ -57,6 +58,11 @@ body {
 .section .button {
     background-color: var(--button-background-color);
     color: var(--title-text-color);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
 }
 
 .section .button.current {
@@ -68,10 +74,14 @@ body {
 .section .button:focus {
     background-color: var(--accent-color);
     color: #FFFFFF;
+   
 
 }
 
 /* projects */
+.title-projects { 
+    visibility: hidden;
+}
 .projects .card {
     background-color: var(--card-background-color);
 
@@ -79,11 +89,22 @@ body {
 
 .projects .card .title {
     color: var(--title-text-color);
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
 
 }
 
 .projects .card .text {
     color: var(--text-color);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+    letter-spacing: 0.48px;
+
 }
 
 /* footer */
