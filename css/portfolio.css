@@ -1,15 +1,14 @@
 :root {
     --text-color: #757575;
     --title-text-color: #212121;
-    --accent-color: #2196F3;
+    --accent-color: #2196f3;
     --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
-    --card-background-color: #FFFFFF;
-    --button-background-color: #F5F4FA;
-
+    --card-background-color: #ffffff;
+    --button-background-color: #f5f4fa;
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     color: #212121;
     font-family: "Roboto";
 }
@@ -17,7 +16,7 @@ body {
 /* header */
 
 .left_logo {
-    color: #2196F3;
+    color: #2196f3;
 }
 
 .right_logo {
@@ -44,14 +43,13 @@ body {
 }
 
 .contact-nav a {
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 .contact-nav a:hover,
 .contact-nav a:focus {
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
-
 
 /* section buttons */
 
@@ -67,24 +65,21 @@ body {
 
 .section .button.current {
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .section .button:hover,
 .section .button:focus {
     background-color: var(--accent-color);
-    color: #FFFFFF;
-   
-
+    color: #ffffff;
 }
 
 /* projects */
-.title-projects { 
+.title-projects {
     visibility: hidden;
 }
 .projects .card {
     background-color: var(--card-background-color);
-
 }
 
 .projects .card .title {
@@ -94,7 +89,6 @@ body {
     font-weight: 700;
     line-height: 2;
     letter-spacing: 1.08px;
-
 }
 
 .projects .card .text {
@@ -104,20 +98,19 @@ body {
     font-weight: 400;
     line-height: 1.87;
     letter-spacing: 0.48px;
-
 }
 
 /* footer */
 .footer {
-    background-color: #2F303A;
+    background-color: #2f303a;
 }
 
 .footer .right_logo {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .footer .address {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .footer .address:hover,

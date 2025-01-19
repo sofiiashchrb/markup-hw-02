@@ -1,10 +1,9 @@
 :root {
-    --primary-title-text-color: #FFFFFF;
+    --primary-title-text-color: #ffffff;
     --text-color: #757575;
     --title-text-color: #212121;
-    --accent-color: #2196F3;
+    --accent-color: #2196f3;
     --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
-
 }
 
 /* для Raleway – 700, а для Roboto – 400, 500, 700 і 900 */
@@ -13,26 +12,25 @@ line-height
 font-weight
 Кнопкам задана властивість cursor зі значенням pointer */
 
-
-
-
 body {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
+    /* use variables for color */
     color: #212121;
     font-family: "Roboto", "Arial", sans-serif;
-
+    /* delete duplicated font styles */
 }
 
 /* header */
 
+/* change spelling by using a "-" */
+
 .left_logo {
-    color: #2196F3;
+    color: #2196f3;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26;
     line-height: 1.2;
     letter-spacing: 2.6;
-
 }
 
 .right_logo {
@@ -48,13 +46,12 @@ body {
 .right_logo {
     text-decoration: none;
 }
-
+/* change it to tag selector and delete unnecessary classes in html  RECOMENDATION*/
 .list {
     list-style: none;
 }
 
 /* site-nav */
-
 
 .site-nav a {
     color: var(--title-text-color);
@@ -81,14 +78,14 @@ body {
 
 .contact-nav a:hover,
 .contact-nav a:focus {
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
 
 /* main */
 
 /* primary section */
 .primary-section {
-    background-color: #2F303A;
+    background-color: #2f303a;
 }
 
 .primary-section .title {
@@ -98,16 +95,17 @@ body {
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .primary-section .button:hover,
 .primary-section .button:focus {
-    color: #2F303A;
+    color: #2f303a;
     cursor: pointer;
 }
 
 .primary-section .button {
-    background-color: #2196F3;
+    background-color: #2196f3;
     color: var(--primary-title-text-color);
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -116,8 +114,6 @@ body {
     line-height: 1.87;
     letter-spacing: 0.96px;
     cursor: pointer;
-
-
 }
 
 /* section */
@@ -131,6 +127,7 @@ body {
 
 .section-text {
     color: var(--text-color);
+    /* delete fw400 from all styles  */
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -150,7 +147,7 @@ body {
 /* our team */
 
 .section-team {
-    background-color: #F5F4FA;
+    background-color: #f5f4fa;
 }
 
 .section-team .title {
@@ -159,11 +156,12 @@ body {
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 1.08px;
+    /* rebase text align to parent container */
     text-align: center;
 }
 
 .team-card {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 .team-card .title {
@@ -180,16 +178,15 @@ body {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.48px;
-
 }
 
 /* footer */
 .footer {
-    background-color: #2F303A;
+    background-color: #2f303a;
 }
 
 .footer .right_logo {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .footer .address {
@@ -224,21 +221,18 @@ body {
     color: var(--accent-color);
 }
 
-
-
 /* styles for portfolio */
 :root {
     --text-color: #757575;
     --title-text-color: #212121;
-    --accent-color: #2196F3;
+    --accent-color: #2196f3;
     --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
-    --card-background-color: #FFFFFF;
-    --button-background-color: #F5F4FA;
-
+    --card-background-color: #ffffff;
+    --button-background-color: #f5f4fa;
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     color: #212121;
     font-family: "Roboto";
 }
@@ -246,7 +240,7 @@ body {
 /* header */
 
 .left_logo {
-    color: #2196F3;
+    color: #2196f3;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26;
@@ -283,14 +277,13 @@ body {
 }
 
 .contact-nav a {
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 .contact-nav a:hover,
 .contact-nav a:focus {
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
-
 
 /* section buttons */
 
@@ -302,29 +295,26 @@ body {
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.48px;
-    cursor: pointer;;
+    cursor: pointer;
 }
 
 .section .button.current {
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .section .button:hover,
 .section .button:focus {
     background-color: var(--accent-color);
-    color: #FFFFFF;
-   
-
+    color: #ffffff;
 }
 
 /* projects */
-.title-projects { 
+.title-projects {
     visibility: hidden;
 }
 .projects .card {
     background-color: var(--card-background-color);
-
 }
 
 .projects .card .title {
@@ -334,7 +324,6 @@ body {
     font-weight: 700;
     line-height: 2;
     letter-spacing: 1.08px;
-
 }
 
 .projects .card .text {
@@ -344,20 +333,19 @@ body {
     font-weight: 400;
     line-height: 1.87;
     letter-spacing: 0.48px;
-
 }
 
 /* footer */
 .footer {
-    background-color: #2F303A;
+    background-color: #2f303a;
 }
 
 .footer .right_logo {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .footer .address {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .footer .address:hover,
