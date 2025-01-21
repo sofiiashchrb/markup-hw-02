@@ -1,363 +1,253 @@
 :root {
-    --primary-title-text-color: #ffffff;
-    --text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196f3;
-    --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
+  --primary-title-text-color: #ffffff;
+  --card-background-color: #ffffff;
+  --text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
+  --button-background-color: #f5f4fa;
 }
 
-/* для Raleway – 700, а для Roboto – 400, 500, 700 і 900 */
-/* font-size
-line-height
-font-weight
-Кнопкам задана властивість cursor зі значенням pointer */
-
 body {
-    background-color: #f5f5f5;
-    /* use variables for color */
-    color: #212121;
-    font-family: "Roboto", "Arial", sans-serif;
-    /* delete duplicated font styles */
+  background-color: #f5f5f5;
+  color: var(--title-text-color);
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 /* header */
 
-/* change spelling by using a "-" */
-
-.left_logo {
-    color: #2196f3;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26;
-    line-height: 1.2;
-    letter-spacing: 2.6;
+.left-logo {
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 2.6px;
 }
 
-.right_logo {
-    color: #000000;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26;
-    line-height: 1.2;
-    letter-spacing: 2.6;
+.right-logo {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 2.6px;
 }
 
-.left_logo,
-.right_logo {
-    text-decoration: none;
+.left-logo,
+.right-logo {
+  text-decoration: none;
 }
-/* change it to tag selector and delete unnecessary classes in html  RECOMENDATION*/
-.list {
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 /* site-nav */
 
 .site-nav a {
-    color: var(--title-text-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.28px;
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.28px;
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .site-nav .link.current {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .contact-nav a {
-    color: var(--text-color);
-    text-decoration: none;
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 .contact-nav a:hover,
 .contact-nav a:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* main */
 
 /* primary section */
 .primary-section {
-    background-color: #2f303a;
+  background-color: #2f303a;
 }
 
 .primary-section .title {
-    color: var(--primary-title-text-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    text-align: center;
-    text-transform: uppercase;
+  color: var(--primary-title-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .primary-section .button:hover,
 .primary-section .button:focus {
-    color: #2f303a;
-    cursor: pointer;
+  color: #2f303a;
+  cursor: pointer;
 }
 
 .primary-section .button {
-    background-color: #2196f3;
-    color: var(--primary-title-text-color);
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    cursor: pointer;
+  background-color: #2196f3;
+  color: var(--primary-title-text-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  cursor: pointer;
 }
 
 /* section */
 .section-title {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.42px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.42px;
 }
 
 .section-text {
-    color: var(--text-color);
-    /* delete fw400 from all styles  */
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.42;
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.42;
 }
 
 /* about us */
 .section-title-about {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 1.08px;
-    text-align: center;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 1.08px;
+  text-align: center;
 }
 
 /* our team */
 
 .section-team {
-    background-color: #f5f4fa;
+  background-color: #f5f4fa;
+  text-align: center;
 }
 
 .section-team .title {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 1.08px;
-    /* rebase text align to parent container */
-    text-align: center;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 1.08px;
+  /* rebase text align to parent container */
 }
 
 .team-card {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .team-card .title {
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.48px;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
 }
 
 .team-card .text {
-    color: var(--text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.48px;
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
 }
 
 /* footer */
 .footer {
-    background-color: #2f303a;
+  background-color: #2f303a;
 }
 
-.footer .right_logo {
-    color: #ffffff;
+.footer .right-logo {
+  color: #ffffff;
 }
 
 .footer .address {
-    color: var(--primary-title-text-color);
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.52px;
-    font-style: normal;
+  color: var(--primary-title-text-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.52px;
+  font-style: normal;
 }
 
 .footer .address:hover,
 .footer .address:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .footer .contact-nav {
-    color: var(--footer-contacts-text-color);
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.52px;
-    font-style: normal;
+  color: var(--footer-contacts-text-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.52px;
+  font-style: normal;
 }
 
 .footer .contact-nav:hover,
 .footer .contact-nav:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
-/* styles for portfolio */
-:root {
-    --text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196f3;
-    --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
-    --card-background-color: #ffffff;
-    --button-background-color: #f5f4fa;
-}
-
-body {
-    background-color: #ffffff;
-    color: #212121;
-    font-family: "Roboto";
-}
-
-/* header */
-
-.left_logo {
-    color: #2196f3;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26;
-    line-height: 1.2;
-    letter-spacing: 2.6;
-}
-
-.right_logo {
-    color: #000000;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26;
-    line-height: 1.2;
-    letter-spacing: 2.6;
-}
-
-.list {
-    list-style: none;
-}
-
-/* site-nav */
-
-.site-nav a {
-    color: var(--title-text-color);
-}
-
-.site-nav a:hover,
-.site-nav a:focus {
-    color: var(--accent-color);
-}
-
-.site-nav .link.current {
-    color: var(--accent-color);
-}
-
-.contact-nav a {
-    color: var(--text-color);
-}
-
-.contact-nav a:hover,
-.contact-nav a:focus {
-    color: var(--accent-color);
-}
+/* for portfolio */
 
 /* section buttons */
 
-.section .button {
-    background-color: var(--button-background-color);
-    color: var(--title-text-color);
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.48px;
-    cursor: pointer;
+.filter .button-filter {
+  background-color: var(--button-background-color);
+  color: var(--title-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
+  cursor: pointer;
 }
 
-.section .button.current {
-    background-color: var(--accent-color);
-    color: #ffffff;
+.filter .button-filter.current {
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
 
-.section .button:hover,
-.section .button:focus {
-    background-color: var(--accent-color);
-    color: #ffffff;
+.filter .button-filter:hover,
+.filter .button-filter:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 /* projects */
 .title-projects {
-    visibility: hidden;
+  visibility: hidden;
 }
 .projects .card {
-    background-color: var(--card-background-color);
+  background-color: var(--card-background-color);
 }
 
 .projects .card .title {
-    color: var(--title-text-color);
-    font-family: "Roboto";
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 1.08px;
+  color: var(--title-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
 }
 
 .projects .card .text {
-    color: var(--text-color);
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.87;
-    letter-spacing: 0.48px;
-}
-
-/* footer */
-.footer {
-    background-color: #2f303a;
-}
-
-.footer .right_logo {
-    color: #ffffff;
-}
-
-.footer .address {
-    color: #ffffff;
-}
-
-.footer .address:hover,
-.footer .address:focus {
-    color: var(--accent-color);
-}
-
-.footer .contact-nav {
-    color: var(--footer-contacts-text-color);
-}
-
-.footer .contact-nav:hover,
-.footer .contact-nav:focus {
-    color: var(--accent-color);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.48px;
 }
